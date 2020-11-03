@@ -1,0 +1,63 @@
+/* initial style */
+p {  position: absolute;
+  top: 20px;
+  left: 200px;
+ 
+    color: red;
+    font-size: 2.5em;
+    Box-sizing: border-box;  
+
+  }
+   
+  /* media query */
+
+    article p {
+        column-count: 2;  
+        color: green;
+        bottom: auto;
+        height:200px;
+         width:250px;
+         overflow: auto;
+      }
+  
+
+  article p {
+    column-count: 1; /* This is the default so we don't really need to specify */
+    position: relative;
+    top: 20px;
+
+  }
+
+  .heading{
+       position: relative;
+       top: 0;
+       left: 5px;
+       height: 150px;
+       background:blue;
+
+  }
+  .heading h1{
+    position: absolute;
+    color: yellow;
+    right:50%;
+    top: 0;
+
+  }
+
+  .container{
+
+    background: yellow;
+    height: 2em;
+    padding: 1em;
+    overflow: visible;
+  }
+
+  .left{
+    float:left
+
+  }
+
+  .right{
+    float:right
+
+  }

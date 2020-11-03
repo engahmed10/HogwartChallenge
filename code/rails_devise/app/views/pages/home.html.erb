@@ -1,0 +1,8 @@
+<h1>Pages#home</h1>
+<%if current_nurse %>
+<%= link_to  "signout", destroy_nurse_session_path,method: :delete%>
+<%else%>
+<%= link_to  "signup", new_nurse_registration_path %>
+<%= link_to "signin",new_nurse_session_path %>
+<%end%>
+
