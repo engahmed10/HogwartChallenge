@@ -33,7 +33,7 @@ class HogsList extends Component{
                         buttonvalue="Show Detials"
                     }
              return <div className="ui eight wide column">
-                        <img src={`/hog-imgs/${this.props.hog.name}.jpg`} width="200" height="200" alt="photo" />
+                        <img src={`/hog-imgs/${this.props.hog.name.replace( /\s/g, '_')}.jpg`} width="200" height="200" alt="photo" />
                         <p>{this.props.hog.name}</p>
                          <button onClick={this.handleChange} > {buttonvalue} </button>  
                          <div  class="ditail">
