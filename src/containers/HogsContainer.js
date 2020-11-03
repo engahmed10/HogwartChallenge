@@ -7,9 +7,7 @@ class HogsContainer extends React.Component{
    }
 
 sortByName=()=>{
-  
-     /// const gressed= this.props.hogs.filter(hog=> hog.greased == true)
-     // console.log(`gressed`,gressed)
+
       let sort=this.state.hogs.sort(function (a, b) {
           var nameA = a.name.toUpperCase(); 
           var nameB = b.name.toUpperCase(); 
@@ -20,8 +18,7 @@ sortByName=()=>{
              return 1;
           }
          });
-    
-         //return sort
+  
          this.setState({
              hogs: sort
          })
